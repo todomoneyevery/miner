@@ -18,10 +18,10 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'template',
-        productName: 'My template',
+        appId: 'miner',
+        productName: 'The Miner',
         artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Copyright © 2018-2020 stereo18',
+        copyright: 'Copyright © 2018-2020',
         directories: {
             buildResources: 'build',
             output: 'dist'
@@ -46,11 +46,11 @@ builder.build({
         },
         linux: {
             target: 'AppImage',
-            maintainer: 'stereo18',
-            vendor: 'stereo18',
-            synopsis: 'A template for electron',
-            description: 'Create electron apps with this template !',
-            category: 'Game'
+            maintainer: 'miner',
+            vendor: 'miner',
+            synopsis: 'A miner',
+            description: 'Mine money',
+            category: 'Tool'
         },
         compression: 'maximum',
         files: [
