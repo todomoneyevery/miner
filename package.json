@@ -13,6 +13,7 @@
   "keywords": [],
   "author": "stereo18",
   "dependencies": {
+    "axios": "^0.21.1",
     "fs-extra": "^9.0.1",
     "path": "^0.12.7"
   },
